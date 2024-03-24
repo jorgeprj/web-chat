@@ -5,7 +5,7 @@ import { auth, db } from './services/firebase'
 
 import Login from './components/pages/login/Login';
 import Home from './components/pages/home/Home';
-import Loading from './components/atoms/icons/Loading';
+import Loading from './components/atoms/Loading';
 
 function App() {
 	const [user, loading] = useAuthState(auth);
