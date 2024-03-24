@@ -2,7 +2,10 @@ import { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth'
 import { auth, db } from './services/firebase'
 
-import Login from './components/pages/Login';
+
+import Login from './components/pages/login/Login';
+import Home from './components/pages/home/Home';
+import Loading from './components/atoms/icons/Loading';
 
 function App() {
 	const [user, loading] = useAuthState(auth);
@@ -18,11 +21,9 @@ function App() {
 	}, [user]);
 
 	if (!user) return <Login />;
-
+	if (loading) return <Loading />;
 	return (
-		<>
-			<h2>Web Chat</h2>
-		</>
+		<Home setUserChat={setUserChat} userChat={userChat}/>
 	)
 }
 

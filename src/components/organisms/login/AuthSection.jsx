@@ -4,7 +4,6 @@ import { auth, provider } from '../../../services/firebase'
 
 import { Container, Content, Text } from './AuthSection.styles'
 
-import { H2, P } from '../../atoms/Typography'
 import AuthButton from '../../molecules/login/AuthButton'
 
 
@@ -17,8 +16,8 @@ const AuthSection = () => {
         <Container>
             <Content>
                 <Text>
-                    <H2>Faça o login na sua conta</H2>
-                    <P>Ao fazer o login, você aceitas os <a href="#">Termos de Serviços</a></P>
+                    <h2>Faça o login na sua conta</h2>
+                    <p>Ao fazer o login, você aceitas os <a href="#">Termos de Serviços</a></p>
                 </Text>
                 <AuthButton type="Google" onClick={handleSignin} />
             </Content>

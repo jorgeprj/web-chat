@@ -3,12 +3,12 @@ import "firebase/compat/auth";
 import "firebase/compat/firestore";
 
 const firebaseConfig = {
-    apiKey: "",
-    authDomain: "",
-    projectId: "",
-    storageBucket: "",
-    messagingSenderId: "",
-    appId: ""
+    apiKey: "AIzaSyAqklmotqxYp1OhCacBRF1ogQe6qFFzfFY",
+    authDomain: "chat-app-4a3c5.firebaseapp.com",
+    projectId: "chat-app-4a3c5",
+    storageBucket: "chat-app-4a3c5.appspot.com",
+    messagingSenderId: "968351453738",
+    appId: "1:968351453738:web:4fda76efc4a516f7ae2953"
 };
 
 

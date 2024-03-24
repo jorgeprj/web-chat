@@ -24,6 +24,10 @@ export const Text = styled.div`
         font-size: 24px;
     }
 
+    & p{
+        font-size: 16px;
+    }
+
     & a{
         text-decoration: none;
         color: black;
