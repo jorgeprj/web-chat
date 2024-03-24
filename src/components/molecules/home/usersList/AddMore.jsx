@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-import * as EmailValidator from 'email-validator'
+import * as EmailValidator from 'email-validator';
 import { auth, db } from "../../../../services/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollection } from "react-firebase-hooks/firestore";
 
 import IconButton from '../../../atoms/buttons/IconButton';
+
 import { Container } from './AddMore.styles';
 
 const AddMore = ({ icon }) => {
@@ -47,7 +48,7 @@ const AddMore = ({ icon }) => {
             <h4>Adicione mais pessoas</h4>
             <IconButton icon={icon} onClick={handleCreateChat} />
         </Container>
-    )
-}
+    );
+};
 
-export default AddMore
+export default AddMore;

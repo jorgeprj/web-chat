@@ -8,32 +8,32 @@ export const Container = styled.div`
     height: 100vh;
     width: 60%;
     gap: 12px;
-`
+`;
 
 export const Content = styled.div`
     display: flex;
     flex-direction: column;
     gap: 16px;
-`
+`;
 
 export const Text = styled.div`
     display: flex;
     flex-direction: column;
 
-    & h2{
+    & h2 {
         font-size: 24px;
     }
 
-    & p{
+    & p {
         font-size: 16px;
     }
 
-    & a{
+    & a {
         text-decoration: none;
         color: black;
 
-        &:hover{
+        &:hover {
             text-decoration: underline;
         }
     }
-`
+`;

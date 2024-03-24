@@ -7,7 +7,7 @@ export const Container = styled.div`
     gap: 4px;
     cursor: pointer;
 
-    & svg{
+    & svg {
         font-size: 24px;
     }
-`
+`;

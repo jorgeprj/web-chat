@@ -1,22 +1,21 @@
-import React from 'react'
+import React from 'react';
 
 import { useAuthState } from "react-firebase-hooks/auth";
-import { auth, db } from "../../../services/firebase";
 import { useCollection } from "react-firebase-hooks/firestore";
+import { auth, db } from "../../../services/firebase";
 
-import { Chats, Container, Content, Divider } from './UsersList.styles'
-import Header from '../../molecules/home/usersList/Header'
-import User from '../../molecules/home/usersList/User';
-import AddMore from '../../molecules/home/usersList/AddMore';
+import { Chats, Container, Content, Divider } from './UsersList.styles';
 
 import { FaUserPlus } from 'react-icons/fa6';
+
+import Header from '../../molecules/home/usersList/Header';
+import User from '../../molecules/home/usersList/User';
+import AddMore from '../../molecules/home/usersList/AddMore';
 
 const UsersList = ({ setUserChat, userChat }) => {
     const [user] = useAuthState(auth);
 
-    const refChat = db
-        .collection("chats")
-        .where("users", "array-contains", user.email);
+    const refChat = db.collection("chats").where("users", "array-contains", user.email);
     const [chatsSnapshot] = useCollection(refChat);
 
     return (
@@ -39,7 +38,7 @@ const UsersList = ({ setUserChat, userChat }) => {
                 <AddMore icon={<FaUserPlus />} />
             </Chats>
         </Container>
-    )
-}
+    );
+};
 
-export default UsersList
+export default UsersList;

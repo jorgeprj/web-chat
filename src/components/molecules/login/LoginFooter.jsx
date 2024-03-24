@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { Container } from './LoginFooter.styles'
 
 const LoginFooter = () => {
@@ -7,6 +8,6 @@ const LoginFooter = () => {
             <p>Copyright © 2024 PET-BCC UFSCar.</p>
         </Container>
     )
-}
+};
 
 export default LoginFooter

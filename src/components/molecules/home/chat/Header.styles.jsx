@@ -5,7 +5,7 @@ export const Container = styled.div`
     align-items: center;
     justify-content: space-between;
     margin-top: 8px;
-`
+`;
 
 export const UserInfo = styled.div`
     display: flex;
@@ -18,16 +18,16 @@ export const UserInfo = styled.div`
         height: 48px;
     }
 
-    & h4{
+    & h4 {
         font-size: 16px;
     }
 
     & p {
         font-size: 12px;
     }
-`
+`;
 
-export const TextInfo = styled.div``
+export const TextInfo = styled.div``;
 
 export const Icons =  styled.div`
     display: flex;
@@ -36,7 +36,7 @@ export const Icons =  styled.div`
 
     color: #fff;
 
-    & svg{
+    & svg {
         cursor: pointer;
     }
-`
+`;

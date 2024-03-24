@@ -9,12 +9,13 @@ export const Container = styled.div`
     padding: 10px 20px;
     margin-bottom: 20px;
     gap: 12px;
+    
     svg {
         width: 24px;
         height: 24px;
         color: #ccc;
         transform: rotate(-45deg);
-        &:hover{
+        &:hover {
             color: #808080;
         }
         cursor: pointer;
@@ -32,11 +33,11 @@ export const Form = styled.form`
         height: 16px;
         color: #fff;
         transform: rotate(0);
-        &:hover{
+        &:hover {
             color: #fff;
         }
     }
-    `;
+`;
 
 export const Input = styled.input`
     padding: 10px 20px;

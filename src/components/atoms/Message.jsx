@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import styled from "styled-components";
 
 import { useAuthState } from "react-firebase-hooks/auth";
@@ -13,10 +13,10 @@ const Line = styled.div`
 
     &.me {
         > div {
-        background-color: var(--primary-color);
-        color: #fff;
+            background-color: var(--primary-color);
+            color: #fff;
         }
-        justify-content: right;
+        justify-content: flex-end;
     }
 `;
 
@@ -28,18 +28,18 @@ const Content = styled.div`
     padding: 3px;
     max-width: 80%;
 `;
+
 const Text = styled.span`
     font-size: 14px;
-    margin: 5px 36px 5px 8px;
+    margin: 5px 8px;
 `;
 
 const MDate = styled.span`
     font-size: 11px;
     text-align: right;
-    height: 15px;
-    margin: -5px 5px 0 ;
+    margin-right: 8px;
+    margin-top: -5px;
 `;
-
 
 const Message = ({ user, message }) => {
     const [userLoggedIn] = useAuthState(auth);
@@ -49,13 +49,11 @@ const Message = ({ user, message }) => {
             <Line className={userLoggedIn?.email === user ? "me" : ""}>
                 <Content>
                     <Text>{message.message}</Text>
-                    <MDate>
-                        {getHours(message?.timestamp)}
-                    </MDate>
+                    <MDate>{getHours(message?.timestamp)}</MDate>
                 </Content>
             </Line>
         </Container>
-    )
-}
+    );
+};
 
-export default Message
+export default Message;

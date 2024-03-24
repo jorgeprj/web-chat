@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Container, Content} from './LogoSection.styles'
+import { Container, Content } from './LogoSection.styles'
 
 import LoginFooter from '../../molecules/login/LoginFooter'
 import WebChatLogo from '../../molecules/WebChatLogo'

@@ -26,5 +26,7 @@ export const MDate = styled.div`
         padding: 5px 15px;
         background: #F2F2F2;
         border-radius: 40px;
+        margin-top: 16px;
+        margin-bottom: 16px;
     }
 `

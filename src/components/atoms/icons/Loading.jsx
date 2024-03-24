@@ -1,12 +1,12 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 const Container = styled.div`
     display: flex;
     height: 100vh;
     align-items: center;
     justify-content: center;
-`
+`;
 
 const Loader = styled.span`
     width: 48px;
@@ -26,14 +26,14 @@ const Loader = styled.span`
             transform: rotate(360deg);
         }
     }
-`
+`;
 
 const Loading = () => {
     return (
         <Container>
             <Loader />
         </Container>
-    )
-}
+    );
+};
 
-export default Loading
+export default Loading;

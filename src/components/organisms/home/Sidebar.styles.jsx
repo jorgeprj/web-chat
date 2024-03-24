@@ -9,19 +9,19 @@ export const Container = styled.div`
     margin-top: 72px;
     height: calc(100vh - 155px);
 
-    & p {
+    p {
         font-size: 14px;
     }
     
-    & svg {
+    svg {
         color: rgba(165, 165, 165, 1);
 
-        &:hover{
+        &:hover {
             color: #767676;
         }
     }
 
-    & .active svg {
+    .active svg {
         color: var(--primary-color);
     }
-`
+`;

@@ -18,7 +18,7 @@ export const Container = styled.div`
         border-radius: 10px;
         background-color: rgba(0, 0, 0, 0.2);
     }
-`
+`;
 
 export const Chats = styled.div`
     display: flex;
@@ -28,19 +28,20 @@ export const Chats = styled.div`
     height: 80%;
     z-index: 10;
     overflow-y: auto;
-    &::-webkit-scrollbar {
-		width: 6px;
-		border-radius: 10px;
-  	}
 
-  	&::-webkit-scrollbar-thumb {
-    	border-radius: 10px;
-    	background-color: rgba(0, 0, 0, 0.2);
-  	}
-`
+    &::-webkit-scrollbar {
+        width: 6px;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+`;
 
 export const Content = styled.div``;
 
 export const Divider = styled.div`
-	border-top: solid 1px #ddd;
+    border-top: solid 1px #ddd;
 `;

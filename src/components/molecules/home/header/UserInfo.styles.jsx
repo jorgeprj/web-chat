@@ -8,25 +8,24 @@ export const Container = styled.div`
     color: white;
     font-size: 32px;
 
-    & p{
+    & p {
         font-size: 14px;
         white-space: nowrap;
     }
 
-    .logout{
+    .logout {
         font-size: 16px;
         cursor: pointer;
         color: #e2e2e2;
     }
 
-    .logout svg:hover{
+    .logout svg:hover {
         color: #fff;
     }
-
 
     @media screen and (max-width: 768px) {
         & p {
             display: none;
         }
     }
-`
+`;

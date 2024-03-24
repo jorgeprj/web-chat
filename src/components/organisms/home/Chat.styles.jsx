@@ -9,11 +9,12 @@ export const Container = styled.div`
     width: calc(80% - 213px);
     height: calc(100vh - 82px);
     justify-content: space-between;
-`
+`;
+
 export const Content = styled.div`
     display: flex;
     flex-direction: column;
-`
+`;
 
 export const Default = styled.div`
     display: flex;
@@ -23,7 +24,7 @@ export const Default = styled.div`
     width: calc(75% - 213px);
     justify-content: center;
     align-items: center;
-`
+`;
 
 export const Title = styled.h1`
     margin-top: 12px;

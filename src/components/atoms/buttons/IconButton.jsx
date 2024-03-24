@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 const Container = styled.div`
     display: flex;
@@ -11,17 +11,18 @@ const Container = styled.div`
     background-color: var(--primary-color);
     color: #fff;
     cursor: pointer;
-    & svg{
+
+    & svg {
         font-size: 20px;
     }
-`
+`;
 
 const IconButton = ({ icon, onClick }) => {
     return (
         <Container onClick={onClick}>
             {icon}
         </Container>
-    )
-}
+    );
+};
 
-export default IconButton
+export default IconButton;

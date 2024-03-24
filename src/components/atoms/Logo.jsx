@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Image = styled.img`
     width: 48px;
     height: 48px;
-`
+`;
 
 const Logo = ({ src }) => {
     return (

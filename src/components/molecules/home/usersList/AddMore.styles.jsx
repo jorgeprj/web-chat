@@ -13,10 +13,10 @@ export const Container = styled.div`
         margin-bottom: 4px;
     }
 
-    & h4{
+    & h4 {
         font-size: 16px;
         font-weight: 500;
         color: var(--primary-color);
         margin-bottom: 8px;
     }
-`
+`;

@@ -19,10 +19,10 @@ export const Container = styled.div`
         width: 24px;
         height: 24px;
     }
-`
+`;
 
 export const Text = styled.h2`
     font-size: 16px;
     font-weight: 700;
     color: black;
-`
+`;

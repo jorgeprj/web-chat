@@ -33,8 +33,8 @@ const Label = styled.label`
 		background: var(--primary-color);
 
 		&:after {
-		left: calc(100% - 5px);
-		transform: translateX(-100%);
+			left: calc(100% - 5px);
+			transform: translateX(-100%);
 		}
 	}
 `;

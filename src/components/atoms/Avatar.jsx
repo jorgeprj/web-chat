@@ -5,7 +5,7 @@ const Image = styled.img`
     width: 32px;
     height: 32px;
     border-radius: 50%;
-`
+`;
 
 const Avatar = ({src}) => {
     return (

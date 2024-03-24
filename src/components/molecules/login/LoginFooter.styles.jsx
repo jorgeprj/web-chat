@@ -9,4 +9,4 @@ export const Container = styled.footer`
     & a {
         color: #fff;
     }
-`
+`;

@@ -1,5 +1,7 @@
 import React from 'react'
+
 import { Container, Text } from './AuthButton.styles'
+
 import AuthIcon from '../../atoms/icons/AuthIcon'
 
 const AuthButton = ({ type, onClick }) => {

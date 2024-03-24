@@ -1,8 +1,9 @@
 import React from 'react'
 
-import { Container, Icons, TextInfo, UserInfo } from './Header.styles'
 import { FaEllipsisVertical, FaPhone } from 'react-icons/fa6'
 import Avatar from '../../../atoms/Avatar'
+
+import { Container, Icons, TextInfo, UserInfo } from './Header.styles'
 
 const Header = ({ userChat }) => {
     return (

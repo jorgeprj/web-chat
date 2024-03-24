@@ -7,7 +7,7 @@ export const Container = styled.div`
     height: 100vh;
     width: 50%;
     padding-left: 80px;
-`
+`;
 
 export const Content = styled.div`
     display: flex;
@@ -17,14 +17,14 @@ export const Content = styled.div`
     gap: 4px;
     color: #fff;
 
-    & h2{
+    & h2 {
         font-weight: 700;
     }
 
     & p {
         font-size: 20px;
     }
-`
+`;
 
 export const LogoContent = styled.div`
     display: flex;
@@ -32,8 +32,8 @@ export const LogoContent = styled.div`
     gap: 8px;
     color: #fff;
 
-    & img{
+    & img {
         width: 40px;
         height: 40px;
     }
-`
+`;

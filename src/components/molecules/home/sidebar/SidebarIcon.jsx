@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { Container } from './SidebarIcon.styles'
 
 const SidebarIcon = ({ className, icon, text }) => {

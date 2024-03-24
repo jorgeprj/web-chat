@@ -3,9 +3,7 @@ import React from 'react'
 import { auth, provider } from '../../../services/firebase'
 
 import { Container, Content, Text } from './AuthSection.styles'
-
 import AuthButton from '../../molecules/login/AuthButton'
-
 
 const AuthSection = () => {
 	const handleSignin = () => {

@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 
 import { useCollection } from "react-firebase-hooks/firestore";
 import { db } from "../../../../services/firebase";
 
 import { MdPerson } from "react-icons/md";
-import { Container, LastMessage, Name } from './User.styles';
 import Avatar from '../../../atoms/Avatar';
-import { getHours } from '../../../../utils/Hours.utils';
+
+import { Container, LastMessage, Name } from './User.styles';
 
 const getUserEmail = (users, userLogged) =>
 	users?.filter((user) => user !== userLogged?.email)[0];
@@ -18,7 +18,7 @@ const User = ({ id, users, names, user, setUserChat, active }) => {
 	const [lastMessage, setLastMessage] = useState(null);
 
     useEffect(() => {
-			const unsubscribe = db
+		const unsubscribe = db
 			.collection("chats")
 			.doc(id)
 			.collection("messages")
@@ -35,8 +35,6 @@ const User = ({ id, users, names, user, setUserChat, active }) => {
 
         return () => unsubscribe();
     }, [id]);
-
-	console.log(lastMessage)
 
     const [getUserItem] = useCollection(
 		db.collection("users").where("email", "==", getUserEmail(users, user))
@@ -61,9 +59,8 @@ const User = ({ id, users, names, user, setUserChat, active }) => {
 				<Name>{getUserName(names, user)}</Name>
 				{lastMessage && <LastMessage>{lastMessage?.message}</LastMessage>}
 			</div>
-			
 		</Container>
-    )
-}
+    );
+};
 
-export default User
+export default User;

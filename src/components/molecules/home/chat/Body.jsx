@@ -2,7 +2,9 @@ import React from "react";
 
 import { useCollection } from "react-firebase-hooks/firestore";
 import { db } from "../../../../services/firebase";
+
 import Message from "../../../atoms/Message";
+
 import { Container, MDate } from "./Body.styles";
 
 const formatDate = (timestamp) => {
@@ -28,7 +30,6 @@ const formatDate = (timestamp) => {
         return messageDate.toLocaleDateString("pt-BR", options);
     }
 };
-
 
 const Body = ({ chatId }) => {
     const [messagesRes] = useCollection(

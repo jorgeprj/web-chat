@@ -1,14 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
+import firebase from "firebase/compat/app";
 import { auth, db } from "../../../../services/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
-import firebase from "firebase/compat/app";
-
 
 import { FaMicrophone, FaPaperclip } from 'react-icons/fa6';
 import IconButton from '../../../atoms/buttons/IconButton';
-import { Container, Form, Input } from './Footer.styles';
 
+import { Container, Form, Input } from './Footer.styles';
 
 const Footer = ({ chatId }) => {
     const [user] = useAuthState(auth);
@@ -29,17 +28,17 @@ const Footer = ({ chatId }) => {
 
     return (
         <Container>
-            <FaPaperclip/>
+            <FaPaperclip />
             <Form onSubmit={handleSendMessage}>
-                <Input 
+                <Input
                     placeholder='Mensagem'
                     onChange={(e) => setMessage(e.target.value)}
                     value={message}
                 />
-                <IconButton icon={<FaMicrophone/>} onClick={handleSendMessage}/>
+                <IconButton icon={<FaMicrophone />} onClick={handleSendMessage} />
             </Form>
         </Container>
-    )
-}
+    );
+};
 
-export default Footer
+export default Footer;
