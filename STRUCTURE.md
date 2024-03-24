@@ -1,20 +1,24 @@
-# Files
+# Files Structure
 
 ## Atomic Design
 
 ### Atomns
-
 - Logo
-- Links
 - Avatar
-- UserName
-- IconButton
 - Loading
+- Message
+#### Buttons
+- IconButton
+- Switch
+
+#### icons
+- AuthIcon
 
 ### Molecules
 
 #### Login
 - AuthButton
+- LoginFooter
 
 #### Home
 ##### Header
@@ -22,7 +26,7 @@
 - UserInfo
 
 ##### Sidebar
-- SidebarOption
+- SidebarIcon
 
 ##### UsersList
 - Header
