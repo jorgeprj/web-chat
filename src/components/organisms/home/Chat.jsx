@@ -11,7 +11,7 @@ const Chat = ({ userChat }) => {
     if (!userChat) {
         return (
             <Default>
-                <Logo src={'../../../src/assets/logo_pet.png'} />
+                <Logo src={'../../src/assets/logo_pet.png'} />
                 <Title>WebChat PET-BCC</Title>
                 <Info>
                     Agora você tem um canal exclusivo para se comunicar com os membros do PET-BCC!
