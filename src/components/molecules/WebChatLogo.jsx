@@ -6,7 +6,7 @@ import { Container } from './WebChatLogo.styles'
 const WebChatLogo = () => {
     return (
         <Container>
-            <Logo src={'../src/assets/logo.png'}/>
+            <Logo src={'../../src/assets/logo.png'}/>
             <p>WebChat</p>
         </Container>
     )
